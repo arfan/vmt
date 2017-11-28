@@ -2,7 +2,6 @@ package vmt
 
 import (
 	"testing"
-	"fmt"
 )
 
 func TestSprintq(t *testing.T) {
@@ -21,5 +20,8 @@ func TestSprints(t *testing.T) {
 	hello:="hello"
 
 	result := Sprints("hello $1", hello)
-	fmt.Println(result)
+
+	if result!="hello hello" {
+		t.Errorf("result error, expected [hello hello], get [%v]", result)
+	}
 }
