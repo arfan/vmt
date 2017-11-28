@@ -62,3 +62,11 @@ func Sprints(format string, a ...interface{}) string {
 
 	return buffer.String()
 }
+
+func Printq(format string, a ...interface{}) {
+	fmt.Print(Sprintq(format, a...))
+}
+
+func Prints(format string, a ...interface{}) {
+	fmt.Print(Sprints(format, a...))
+}
