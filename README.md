@@ -21,3 +21,21 @@ or like this
 `fmt.Println(vmt.Sprints(`SELECT * from user where age=$1 and gender=$2`, 25, "m"))`
 
 
+## Complete sample
+```go
+package main
+
+import (
+	"fmt"
+	"github.com/arfan/vmt"
+)
+
+func main() {
+	fmt.Println("hello")
+
+	str:="I $1 $2"
+
+	fmt.Println(vmt.Sprints(str, "love", "you"))
+
+}
+```
