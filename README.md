@@ -22,7 +22,7 @@ or like this
 
 
 ## Installation
-go get github.com/arfan/vmt
+`go get github.com/arfan/vmt`
 
 ## Example
 ```go
