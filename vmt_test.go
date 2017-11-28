@@ -25,3 +25,11 @@ func TestSprints(t *testing.T) {
 		t.Errorf("result error, expected [hello hello], get [%v]", result)
 	}
 }
+
+func TestPrintq(t *testing.T) {
+	Printq("hello ? love ?", "I", "You")
+}
+
+func TestPrints(t *testing.T) {
+	Prints("hello $2 love $1", "You", "I")
+}
