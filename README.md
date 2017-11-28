@@ -21,7 +21,10 @@ or like this
 `fmt.Println(vmt.Sprints(`SELECT * from user where age=$1 and gender=$2`, 25, "m"))`
 
 
-## Complete sample
+## Installation
+`go get github.com/arfan/vmt`
+
+## Example
 ```go
 package main
 
@@ -36,6 +39,24 @@ func main() {
 	str:="I $1 $2"
 
 	fmt.Println(vmt.Sprints(str, "love", "you"))
+
+}
+```
+
+```go
+package main
+
+import (
+	"fmt"
+	"github.com/arfan/vmt"
+)
+
+func main() {
+	fmt.Println("hello")
+
+	str:="I ? ?"
+
+	fmt.Println(vmt.Sprintq(str, "love", "you"))
 
 }
 ```
