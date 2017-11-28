@@ -16,3 +16,6 @@
 .glide/
 
 .virtualgo
+
+.idea
+.idea/*
